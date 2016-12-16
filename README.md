@@ -4,7 +4,7 @@
 
 #### By _**Kyle Lange**_
 
-### See it [live here.](https://kylelange.github.io/arctic-wild)
+### See it [live here. (sorry, not yet...)](https://kylelange.github.io/arctic-wild)
 
 ![screenshot](Screen Shot.png)
 
