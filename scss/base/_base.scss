@@ -152,27 +152,34 @@ button {
   background-size: cover;
   width: 100%;
   height: 80px;
-  display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  @extend %nav;
   ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    @media screen and #{$dropdown-break} {
-      display: none;
-    }
+    margin-left: 6%;
+    width: 40%;
     li{
       color: $font-2nd-color;
-      list-style-type: none;
-      font-family: $font-header;
-      transition: #{$hover};
+      font-family: $font-body;
     }
-    li:hover, li:active, li:focus {
-      transition: #{$hover};
-      color: $hover-color;
-      transform: #{$scale};
+    li:last-child {
+      color: $button;
     }
+    span {
+      color: $font-2nd-color;
+      font-size: 2em;
+    }
+  }
+  a {
+    margin-right: 10%;
+    list-style-type: none;
+    font-family: $font-body;
+    transition: #{$hover};
+    color: $font-2nd-color;
+  }
+  a:hover {
+    transition: #{$hover};
+    color: $hover-color;
+    transform: #{$scale};
   }
 }

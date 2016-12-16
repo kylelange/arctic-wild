@@ -15,4 +15,25 @@
 
 //placeholders
 
-%nav
+%nav {
+  display: flex;
+  align-items: center;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and #{$dropdown-break} {
+      display: none;
+    }
+    li {
+      list-style-type: none;
+      transition: #{$hover};
+    }
+    li:hover, li:active, li:focus {
+      transition: #{$hover};
+      color: $hover-color;
+      transform: #{$scale};
+    }
+  }
+}
