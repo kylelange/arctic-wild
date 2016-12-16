@@ -7,17 +7,19 @@ $light-grey: #454542;
 //color uses
 
 $button: $orange;
+$hover-color: $orange;
 $font-primary-color: $white;
 $font-2nd-color: $light-grey;
 
 //interpolation of img files
 
-$img1: 'hero-moose.jpg';
-$img2: 'black-dragon.jpg';
-$img3: 'dark-magician.png';
-$img4: 'yugi.jpg';
-$img5: 'joey.jpg';
-$img6: 'cards.jpg';
+$img-hero: 'hero-moose.jpg';
+$img2-big: 'raft.jpg';
+$img3: 'basecamp.jpg';
+$img4: 'backpacking.jpg';
+$img5: 'canoe.jpg';
+$img6: 'photo-op.jpg';
+$img7-big: 'home-base.jpg';
 
 //fonts
 
@@ -25,3 +27,12 @@ $font-stack-header: Impact, sans-serif;
 $font-header: 'Fjalla One', $font-stack-header;
 $font-stack-body: helvetica, sans-serif;
 $font-body: 'Open Sans', $font-stack-body;
+
+//breakpoints
+
+$dropdown-break: '(max-width: 960px)';
+
+//hover and other effects
+
+$hover: 'all 400ms ease-in-out';
+$scale: 'scale(1.3)';
