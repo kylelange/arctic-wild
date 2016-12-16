@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAGE,IAAK;EACH,UAAU,EAAE,UAAU;;AAItB,sBAEU;EACR,UAAU,EAAE,OAAO;;ACLzB,IAAK;EACH,gBAAgB,EAAE,MAAM",
+"mappings": "AAGE,IAAK;EACH,UAAU,EAAE,UAAU;;AAItB,sBAEU;EACR,UAAU,EAAE,OAAO;;ACJzB,IAAK;EACH,gBAAgB,EAAE,MAAM;EACxB,WAAW,EAAE,kBAAkB;;AAGjC,EAAG;EACD,WAAW,EAAE,WAAW",
 "sources": ["../neat/grid/_box-sizing.scss","../scss/application.scss"],
 "names": [],
 "file": "application.css"

@@ -5,6 +5,10 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: tomato; }
+  background-color: tomato;
+  font-family: 'Fjalla One',serif; }
+
+h2 {
+  font-family: "Open Sans"; }
 
 /*# sourceMappingURL=application.css.map */
