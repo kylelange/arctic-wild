@@ -1,0 +1,18 @@
+//mixins
+
+@mixin circle-btn ($background-color: $opacity-dark) {
+  background-color: $background-color;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 25px;
+  transition: #{$hover};
+  img {
+    width: 40px;
+    margin: 25px 35px;
+  }
+}
+
+//placeholders
+
+%nav

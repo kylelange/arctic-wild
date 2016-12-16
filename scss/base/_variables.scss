@@ -3,15 +3,19 @@ $white: #ffffff;
 $orange: #E07537;
 $grey: #343433;
 $light-grey: #454542;
+$lighter-grey: #e6e6e0;
+$opacity-light: transparentize($white, .5);
+$opacity-dark: transparentize($grey, .5);
 
 //color uses
 
+$background-color: $lighter-grey;
 $button: $orange;
 $hover-color: $orange;
 $font-primary-color: $white;
-$font-2nd-color: $light-grey;
+$font-2nd-color: $lighter-grey;
 
-//interpolation of img files
+//interpolation of img/icon files
 
 $img-hero: 'hero-moose.jpg';
 $img2-big: 'raft.jpg';
@@ -20,6 +24,10 @@ $img4: 'backpacking.jpg';
 $img5: 'canoe.jpg';
 $img6: 'photo-op.jpg';
 $img7-big: 'home-base.jpg';
+
+$icon1: 'play.png';
+$icon2: 'bg-icon.png';
+
 
 //fonts
 
