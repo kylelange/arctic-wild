@@ -164,6 +164,12 @@ button {
   flex-direction: row;
   justify-content: space-between;
   @extend %nav;
+  @media screen and #{$dropdown-break} {
+    justify-content: center;
+    a {
+      margin-left: 15%;
+    }
+  }
   ul {
     margin-left: 6%;
     width: 40%;
@@ -181,10 +187,11 @@ button {
   }
   a {
     margin-right: 10%;
-    list-style-type: none;
+    text-decoration: none;
     font-family: $font-body;
     transition: #{$hover};
     color: $font-2nd-color;
+    font-size: 1.3em;
   }
   a:hover {
     transition: #{$hover};
@@ -198,8 +205,28 @@ button {
   display: flex;
   flex-direction: row;
   height: 420px;
+  @media screen and #{$dropdown-break} {
+    flex-wrap: wrap;
+    .tile1 {
+      width: 100%;
+      height: 420px;
+    }
+    .tile2 {
+      width: 50%;
+      height: 420px;
+    }
+    .tile3 {
+      width: 50%;
+      height: 420px;
+    }
+  }
   .tile1 {
     @include tile(2, $img2-big);
   }
-
+  .tile2 {
+    @include tile(1, $img3);
+  }
+  .tile3 {
+    @include tile(1, $img4);
+  }
 }
