@@ -7,9 +7,43 @@
   height: 100px;
   margin-top: 25px;
   transition: #{$hover};
-  img {
+  img, svg {
     width: 40px;
     margin: 25px 35px;
+  }
+}
+
+@mixin tile ($flex-grow: 1, $img:'') {
+  flex-grow: $flex-grow;
+  background-image: url('../img/#{$img}');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 50%;
+  .tile-link {
+    height: 420px;
+    width: 100%;
+  }
+  .circle-btn {
+    @include circle-btn(){};
+    position: relative;
+    svg {
+      position: absolute;
+    }
+  }
+  .color-box {
+    width: 40px;
+    height: 5px;
+    background-color: $button;
+    position: absolute;
+    left: 50px;
+    bottom: 80px;
+  }
+  h1 {
+    font-size: 1.2em;
+    position: absolute;
+    left: 50px;
+    bottom: 40px;
   }
 }
 
