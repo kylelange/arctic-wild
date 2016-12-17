@@ -25,10 +25,18 @@
   }
   .circle-btn {
     @include circle-btn(){};
-    position: relative;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 42%;
     svg {
-      position: absolute;
+      width: 50px;
+      margin: 0 25px;
     }
+  }
+  .circle-btn:hover {
+    transform: #{$scale};
+    transition: #{$hover};
+    background-color: opacify($opacity-dark, .2);
   }
   .color-box {
     width: 40px;

@@ -224,12 +224,19 @@ li {
       height: 100px;
       margin-top: 25px;
       transition: all 400ms ease-in-out;
-      position: relative; }
+      position: absolute;
+      margin-top: 200px;
+      margin-left: 42%; }
       .flex-row1 .tile1 .circle-btn img, .flex-row1 .tile1 .circle-btn svg {
         width: 40px;
         margin: 25px 35px; }
       .flex-row1 .tile1 .circle-btn svg {
-        position: absolute; }
+        width: 50px;
+        margin: 0 25px; }
+    .flex-row1 .tile1 .circle-btn:hover {
+      transform: scale(1.3);
+      transition: all 400ms ease-in-out;
+      background-color: rgba(52, 52, 51, 0.7); }
     .flex-row1 .tile1 .color-box {
       width: 40px;
       height: 5px;
@@ -258,12 +265,19 @@ li {
       height: 100px;
       margin-top: 25px;
       transition: all 400ms ease-in-out;
-      position: relative; }
+      position: absolute;
+      margin-top: 200px;
+      margin-left: 42%; }
       .flex-row1 .tile2 .circle-btn img, .flex-row1 .tile2 .circle-btn svg {
         width: 40px;
         margin: 25px 35px; }
       .flex-row1 .tile2 .circle-btn svg {
-        position: absolute; }
+        width: 50px;
+        margin: 0 25px; }
+    .flex-row1 .tile2 .circle-btn:hover {
+      transform: scale(1.3);
+      transition: all 400ms ease-in-out;
+      background-color: rgba(52, 52, 51, 0.7); }
     .flex-row1 .tile2 .color-box {
       width: 40px;
       height: 5px;
@@ -292,12 +306,19 @@ li {
       height: 100px;
       margin-top: 25px;
       transition: all 400ms ease-in-out;
-      position: relative; }
+      position: absolute;
+      margin-top: 200px;
+      margin-left: 42%; }
       .flex-row1 .tile3 .circle-btn img, .flex-row1 .tile3 .circle-btn svg {
         width: 40px;
         margin: 25px 35px; }
       .flex-row1 .tile3 .circle-btn svg {
-        position: absolute; }
+        width: 50px;
+        margin: 0 25px; }
+    .flex-row1 .tile3 .circle-btn:hover {
+      transform: scale(1.3);
+      transition: all 400ms ease-in-out;
+      background-color: rgba(52, 52, 51, 0.7); }
     .flex-row1 .tile3 .color-box {
       width: 40px;
       height: 5px;
