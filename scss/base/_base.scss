@@ -45,6 +45,7 @@ body {
 h1 {
   font-family: $font-header;
   color: $font-primary-color;
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -56,6 +57,7 @@ h2 {
 button {
 
 }
+
 //_header.scss
 .header {
   position: relative;

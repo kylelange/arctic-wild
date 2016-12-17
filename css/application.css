@@ -60,7 +60,8 @@ body {
 
 h1 {
   font-family: "Fjalla One", Impact, sans-serif;
-  color: #ffffff; }
+  color: #ffffff;
+  letter-spacing: 1px; }
 
 h2 {
   font-family: "Open Sans", helvetica, sans-serif;
