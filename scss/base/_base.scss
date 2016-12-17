@@ -238,7 +238,7 @@ button {
   @media screen and #{$dropdown-break} {
     flex-wrap: wrap;
     .tile4 {
-      width: 100%;
+      width: 50%;
       height: 420px;
     }
     .tile5 {
@@ -246,12 +246,12 @@ button {
       height: 420px;
     }
     .tile6 {
-      width: 50%;
+      width: 100%;
       height: 420px;
     }
   }
   .tile4 {
-    @include tile(2, $img5);
+    @include tile(1, $img5);
   }
   .tile5 {
     @include tile(1, $img6);

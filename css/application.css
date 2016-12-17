@@ -340,16 +340,16 @@ li {
     .flex-row2 {
       flex-wrap: wrap; }
       .flex-row2 .tile4 {
-        width: 100%;
+        width: 50%;
         height: 420px; }
       .flex-row2 .tile5 {
         width: 50%;
         height: 420px; }
       .flex-row2 .tile6 {
-        width: 50%;
+        width: 100%;
         height: 420px; } }
   .flex-row2 .tile4 {
-    flex-grow: 2;
+    flex-grow: 1;
     background-image: url("../img/canoe.jpg");
     background-size: cover;
     background-position: center;
