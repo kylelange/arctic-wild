@@ -76,9 +76,8 @@ button {
     left: 5%;
     width: 90%;
     height: 50px;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
+    @extend %nav;
   }
   .text-svg {
     width: 200px;
@@ -91,24 +90,10 @@ button {
     min-width: 60px
   }
   ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     flex-grow: 1;
-    @media screen and #{$dropdown-break} {
-      display: none;
-    }
     li{
       color: $font-primary-color;
-      list-style-type: none;
       font-family: $font-header;
-      transition: #{$hover};
-    }
-    li:hover, li:active, li:focus {
-      transition: #{$hover};
-      color: $hover-color;
-      transform: #{$scale};
     }
   }
   .dropdown span {
@@ -129,10 +114,8 @@ button {
     padding-top: 170px;
     @media screen and #{$md-break} {
       padding-top: 130px;
-      border: 1px dotted tomato;
       .hero-text {
         min-width: 400px;
-        border: 1px dotted tomato;
       }
     }
     h1 {
@@ -231,6 +214,20 @@ button {
       height: 420px;
     }
   }
+  @media screen and #{$sm-break} {
+    .tile1 {
+      width: 100%;
+      height: 420px;
+    }
+    .tile2 {
+      width: 100%;
+      height: 420px;
+    }
+    .tile3 {
+      width: 100%;
+      height: 420px;
+    }
+  }
   .tile1 {
     @include tile(2, $img2-big);
   }
@@ -257,6 +254,22 @@ button {
       width: 50%;
       height: 420px;
       margin-top: 420px;
+    }
+    .tile6 {
+      width: 100%;
+      height: 420px;
+    }
+  }
+  @media screen and #{$sm-break} {
+    .tile4 {
+      width: 100%;
+      height: 420px;
+      margin-top: 840px;
+    }
+    .tile5 {
+      width: 100%;
+      height: 420px;
+      margin-top: 0;
     }
     .tile6 {
       width: 100%;
