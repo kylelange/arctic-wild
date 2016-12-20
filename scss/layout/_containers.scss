@@ -1,0 +1,139 @@
+/*middle nav bar - to be position fixed at a fututre date on scroll down*/
+.middle-nav{
+  position: absolute;
+  z-index: 1;
+  background: url('../img/#{$icon2}') top center repeat-x;
+  background-size: cover;
+  width: 100%;
+  height: 80px;
+  flex-direction: row;
+  justify-content: space-between;
+  @extend %nav;
+  @media screen and #{$dropdown-break} {
+    justify-content: center;
+    a {
+      margin-left: 15%;
+    }
+  }
+  ul {
+    margin-left: 6%;
+    width: 40%;
+    li{
+      color: $font-2nd-color;
+      font-family: $font-body;
+    }
+    li:last-child {
+      color: $button;
+    }
+    span {
+      color: $font-2nd-color;
+      font-size: 2em;
+    }
+  }
+  a {
+    margin-right: 10%;
+    text-decoration: none;
+    font-family: $font-body;
+    transition: #{$hover};
+    color: $font-2nd-color;
+    font-size: 1.3em;
+  }
+  a:hover {
+    transition: #{$hover};
+    color: $hover-color;
+    transform: #{$scale};
+  }
+}
+
+//image tiles flexed in rows, not columns
+.flex-row1 {
+  display: flex;
+  flex-direction: row;
+  height: 420px;
+  @media screen and #{$dropdown-break} {
+    flex-wrap: wrap;
+    .tile1 {
+      width: 100%;
+      height: 420px;
+    }
+    .tile2 {
+      width: 50%;
+      height: 420px;
+    }
+    .tile3 {
+      width: 50%;
+      height: 420px;
+    }
+  }
+  @media screen and #{$sm-break} {
+    .tile1 {
+      width: 100%;
+      height: 420px;
+    }
+    .tile2 {
+      width: 100%;
+      height: 420px;
+    }
+    .tile3 {
+      width: 100%;
+      height: 420px;
+    }
+  }
+  .tile1 {
+    @include tile(2, $img2-big);
+  }
+  .tile2 {
+    @include tile(1, $img3);
+  }
+  .tile3 {
+    @include tile(1, $img4);
+  }
+}
+
+.flex-row2 {
+  display: flex;
+  flex-direction: row;
+  height: 420px;
+  @media screen and #{$dropdown-break} {
+    flex-wrap: wrap;
+    .tile4 {
+      width: 50%;
+      height: 420px;
+      margin-top: 420px;
+    }
+    .tile5 {
+      width: 50%;
+      height: 420px;
+      margin-top: 420px;
+    }
+    .tile6 {
+      width: 100%;
+      height: 420px;
+    }
+  }
+  @media screen and #{$sm-break} {
+    .tile4 {
+      width: 100%;
+      height: 420px;
+      margin-top: 840px;
+    }
+    .tile5 {
+      width: 100%;
+      height: 420px;
+      margin-top: 0;
+    }
+    .tile6 {
+      width: 100%;
+      height: 420px;
+    }
+  }
+  .tile4 {
+    @include tile(1, $img5);
+  }
+  .tile5 {
+    @include tile(1, $img6);
+  }
+  .tile6 {
+    @include tile(2, $img7-big);
+  }
+}

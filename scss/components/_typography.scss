@@ -1,0 +1,15 @@
+//_typography.scss
+h1 {
+  font-family: $font-header;
+  color: $font-primary-color;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: $font-body;
+  color: $font-primary-color;
+}
+
+li {
+  letter-spacing: 1px;
+}
